@@ -1,30 +1,36 @@
 /* Google fonts cdn link */
 @import url(//db.onlinewebfonts.com/c/9b06ae83a4412168ed194a8ed31218c2?family=Mabry+Pro+Medium);
-@font-face {font-family: "Mabry Pro Medium"; src: url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.eot");}
+@font-face {font-family: "Mabry Pro Medium"; src: url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.eot"); src: url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.svg#Mabry Pro Medium") format("svg"); }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: MabryPro, sans-serif;
+    font-family: 'Mabry Pro Medium', sans-serif;
     text-decoration: none;
 }
 
+html{
+  font-size: 16px;
+}
+
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 1280px;
     height: 103px;
+    z-index: 1000;
     background: rgb(255, 255, 255);
 }
 
 nav .navbar {
-    height: 102%;
+    height: 102px;
     max-width: 1296px;
     margin: auto;
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
     padding: 24px 24px 24px 24px;
 }
@@ -76,19 +82,25 @@ nav .navbar .nav-links .links li .arrow {
 
 
 nav .navbar .nav-links .links li:hover .htmlcss-arrow {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
     color: rgb(236, 93, 160);
 }
 
 .sign {
     display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
 }
 
 .signinlink {
-    margin-right: 32px;
-    line-height: 51px;
-    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 16px;
+    margin-right: 40px;
+    font-weight: 700;
     color: #382383;
+    text-decoration: solid;
 }
 
 .button {
@@ -101,9 +113,15 @@ nav .navbar .nav-links .links li:hover .htmlcss-arrow {
     display: inline-flex;
     font-size: 16px;
     height: 54px;
+    width: 183.2px;
     line-height: 24px;
     justify-content: center;
     text-align: center;
+    align-items: center;
+}
+
+main .button {
+  width: 200px
 }
 
 .button:hover {
@@ -112,17 +130,21 @@ nav .navbar .nav-links .links li:hover .htmlcss-arrow {
 
 main{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-between;
     margin-left: 20px;
     margin: 70px 30px;
-    margin-top: 150px;
+    margin-top: 75px;
+    height: 521px;
 }
+
+
 
 .crypto {
     width: 500px;
     margin-top: 50px;
     margin-left: 10px;
-
+    font-family: inherit;
 
 }
 
@@ -182,7 +204,16 @@ h6 {
     padding-top: 24px;
 }
 
-.slider-container {
+.image {
+  max-width: 542px;
+  height: 521px;
+  justify-content: center;
+  width: 542px;
+Variables
+
+}
+
+ /* .slider-container {
     background-color: white;
    width:100%;
     display: block;
@@ -311,4 +342,13 @@ h6 {
     border-radius: 50%;
     background-color: black;
     margin: 0 10px 0 10px;
+  } */
+
+
+  
+
+  @media (min-width: 64rem)  { 
+    .sign .signinlink {
+      display: block;
+    }
   }
