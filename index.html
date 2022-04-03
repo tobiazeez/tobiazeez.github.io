@@ -1,407 +1,115 @@
-/* Google fonts cdn link */
-@import url(//db.onlinewebfonts.com/c/9b06ae83a4412168ed194a8ed31218c2?family=Mabry+Pro+Medium);
-@font-face {font-family: "Mabry Pro Medium"; src: url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.eot"); src: url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.svg#Mabry Pro Medium") format("svg"); }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mabry Pro Medium', sans-serif;
-    text-decoration: none;
-}
-
-html{
-  font-size: 16px;
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 1280px;
-    height: 103px;
-    z-index: 1000;
-    background: rgb(255, 255, 255);
-}
-
-nav .navbar {
-    height: 102px;
-    max-width: 1296px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    padding: 24px 24px 24px 24px;
-}
-
-nav .navbar .logo a {
-    height: 32px;
-    width: 109px;
-}
-
-nav .navbar .nav-links { 
-    background: white;
-    height: 102%;
-    line-height: 51px;
-
-}
-
-nav .navbar .nav-links .links {
-    display: flex;
-}
-
-nav .navbar .nav-links .links li {
-    list-style: none;
-    position: relative;
-    align-items: center;
-    display: flex;
-    padding: 0 14px;
-}
-
-nav .navbar .nav-links .links li a {
-    color:  rgb(76,74,85);
-    text-decoration: none;
-    white-space: nowrap;
-    height: 100%;
-}
-
-nav .navbar .nav-links .links li a:hover {
-    color: rgb(236, 93, 160); 
-}
-
-nav .navbar .nav-links .links li .arrow {
-  
-    height: 100%;
-    width: 22px;
-    line-height: 51px;
-    text-align: center;
-    color: rgb(76,74,85);
-    transition: all 0.3s ease;
-}
-
-
-nav .navbar .nav-links .links li:hover .htmlcss-arrow {
-    transform: rotate(-180deg);
-    color: rgb(236, 93, 160);
-}
-
-.sign {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-}
-
-.signinlink {
-    font-size: 1rem;
-    line-height: 1rem;
-    height: 16px;
-    margin-right: 40px;
-    font-weight: 700;
-    color: #382383;
-    text-decoration: solid;
-}
-
-.button {
-    background-color: #382383;
-    color: white;
-    border: 10px;
-    padding: 15px 45px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 16px;
-    height: 54px;
-    width: 183.2px;
-    line-height: 24px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-main .button {
-  width: 200px
-}
-
-.button:hover {
-    background-color: rgb(99,216,147);
-}
-
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    margin-left: 20px;
-    margin: 70px 30px;
-    margin-top: 75px;
-    height: 521px;
-}
-
-
-
-.crypto {
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 10px;
-    font-family: inherit;
-
-}
-
-h1{
-    font-size: 64px;
-    font-family: MabryPro sans-serif;
-    color: rgb(32, 23, 73);
-    font-weight: 800;
-    display: block;
-    height: 152px;
-    line-height: 76.8px;
-    margin-bottom: 24px;
-    margin-block-end: 24px;
-    width: 560px;
-    max-width: 560px;
-    word-wrap: break-word;
-}
-
-p {
-    display: block;
-    color: rgb(76, 74, 85);
-    font-size: 15px;
-    font-weight: 450;
-    height: 50px;
-    line-height: 25.6px;
-    margin-bottom: 48px;
-    max-width: 400px;
-    width: 400px;
-}
-
-h6 {
-    display: block;
-    color: rgb(76, 74, 85);
-    font-size: 13.760000228881836px;
-    height: 21px;
-    letter-spacing: 1.7200000286102295px;
-    line-height: 20.639999389648438px;
-    margin-block-end: 16px;
-    margin-bottom: 16px;
-    text-align: left;
-    text-transform: uppercase;
-    width: 560px;
-    font-weight: 500;
-    padding-top: 48px;
-}
-
-.stores a {
-    color: rgb(236, 93, 160);
-    cursor: pointer;
-    display: inline-flex;
-    font-weight: bold;
-    height: 19px;
-    line-height: 19.200000762939453px;
-    text-align: left;
-    width: 95.15625px;
-    font-size: 16px;
-    padding-top: 24px;
-}
-
-.image {
-  max-width: 542px;
-  height: 521px;
-  justify-content: center;
-  width: 542px;
-Variables
-
-}
-
- /* .slider-container {
-    background-color: white;
-   width:100%;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-  }
-  
-  .slider {
-    width: 100%;
-    max-width: 1600px;
-    height: 200px;
-    margin: 10px;
-   border-image: space;
-    border-radius: 20px;
-    overflow:hidden;
-    position: relative;
-    border-radius: 10px;
-    padding-bottom: 300px;
-    margin-bottom: 60px ;
-  }
-  .slides.img{
-      padding-bottom: 50px;
-  }
-  .slides {
-    display: flex;
-    overflow-x: scroll;
-    position: relative;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    border-radius: 20px;
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buy Bitcoin, Ethereum and other cryptocurrencies in Nigeria</title>
+        <link href="quidaxheropage.css" rel="stylesheet">
+        <!--box icons font cdn link-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> 
+    </head>
     
-  }
-  
-  .slide:nth-of-type(even) {
-    background-color: white;
-  }
-  
-  .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 100%;
-    height: 200px;
-    scroll-snap-align: center;
-    margin-right: 0px;
-    box-sizing: border-box;
-    background: white;
-    transform-origin: center center;
-    transform: scale(1);
-    overflow: hidden;
-    
-  }
-  
-  .slide__text {
-    font-size: 40px;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
-  
-  .slide a {
-    background: none;
-   
-    position: absolute;
-    top: 48%;
-    width: 35px;
-    height: 35px;
-    border: solid black;
-    border-width: 0 4px 4px 0;
-    padding: 3px;
-    box-sizing: border-box;
-  }
-  
-  a.slide__prev,
-  .slider::before {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    left: 5%;
-  }
-  
-  a.slide__next,
-  .slider::after {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    right: 5%;
-  }
-  
-  .slider::before,
-  .slider::after,
-  .slide__prev,
-  .slide__next {
-    position: absolute;
-    top: 48%;
-    width: 35px;
-    height: 35px;
-   
-    border-width: 0 4px 4px 0;
-    padding: 3px;
-    box-sizing: border-box;
-  }
-  
-  .slider::before,
-  .slider::after {
-    content: "";
-    z-index: 1;
-    background: none;
-    pointer-events: none;
-  }
-  
-  .slider__nav {
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    width: 200px;
-    margin-left: -100px;
-    text-align: center;
-    height: ;
-  }
-  
-  .slider__navlink {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: black;
-    margin: 0 10px 0 10px;
-  } */
-
-
-  
-
-  @media (min-width: 64rem)  { 
-    .sign .signinlink {
-      display: block;
-    }
-  }
- 
-
-  @media only screen and (max-width: 1020px) {
-    html{
-        font-size: 14px;
-    }
-    .logo{
-        max-width: 6.80rem;
-        min-height: 2.75rem;
-        z-index: ;
-    }
-    nav{
-        display: none;
-    }
-    .button{
-        padding: 0rem 2.7rem;
-        min-height: 3.5rem;
-        height: 100%;
-        font-size: 1rem;
-    }
-    
-    main .button{
-        padding: 0.45rem 4.5rem;
-        font-size: 1.15rem;
-    }
-
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 5rem;
-        padding-right: 5rem;
+    <body>
+        <header>
+                <nav>
+                    <div class="navbar">
+                        <div class="logo"><a href="https://www.quidax.com/"><img src="https://nynm-quidax-strapi.s3.amazonaws.com/header_light_logo_a1a4850a86.svg"></a></div>
+                            <div class="nav-links">
+                                <ul class="links">
+                                    <li><a href="#"><span>Products</span></a><i class='bx bxs-chevron-down arrow htmlcss-arrow'></i></li>
+                                    <li><a href="#">Resources</a><i class='bx bxs-chevron-down arrow htmlcss-arrow'></i></li>
+                                    <li><a href="#">Company</a><i class='bx bxs-chevron-down arrow htmlcss-arrow'></i></li>
+                                </ul>
+                            </div>
+                            <div class="sign">
+                                <a class="signinlink" href="https://app.quidax.com/signin">Sign In</a>
+                                <form action="https://app.quidax.com/signup">
+                                     <button class="button">Get Started</button>
+                                </form>
+                            </div>
+                    </div>
+                </nav>
+    </header>
+    <main>
         
-    .crypto {
-          font-size: 3.8rem;
-          display: flex;
-          max-width:760.41px;
-          width: 100%;
-          justify-content: center;
-      }
+            <div class="crypto">
+                <h1>Buy and sell<br>crypto with ease</h1>
+                <p>Quidax makes it simple to buy and sell cryptocurrency.<br>Join the squad and get started today.</p>
+                
+                    <form action="https://app.quidax.com/signup">
+                        <button class="button">Join the squad</button>
+                   </form> 
 
-      h6 {
-        font-size: 1.0rem;
-        display: flex;
-        justify-content: center;
-    }
-    .stores a{
-        font-size: 0.95rem;
-        display: flex;
-        justify-content: center;
-    }
+                   <div class="stores">
+                        <h6>DOWNLOAD ON</h6>
+                        <a href="https://play.google.com/store/apps/details?id=com.quidax.lite" target="_blank">Play Store</a>
+                        <a href="https://apps.apple.com/ng/app/quidax-buy-sell-bitcoin/id1603997707" target="_blank">App Store</a> 
+                    </div>
+            </div>
+        
+            <div class="image"> 
+                <img src="https://nynm-quidax-strapi.s3.amazonaws.com/hero_img_f92d0f01cd.png" alt="Phone" height="521px" width="542px">
+            </div>
+    </main>
+    <!-- <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div id="slides__1" class="slide">
+                <img src="https://nynm-quidax-strapi.s3.amazonaws.com/QDX_Vault_95583d6936.jpeg" height="200px" style="border-radius: 10px"/>
+              <a class="slide__prev" href="#slides__11" title="Next"></a>
+              <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+            <div id="slides__2" class="slide">
+                <img src="https://nynm-quidax-strapi.s3.amazonaws.com/Safemoon_v2_Coming_94eba6f10e.jpeg" height="200px" style="border-radius: 10px"/>
+              <a class="slide__prev" href="#slides__2" title="Prev"></a>
+              <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <div id="slides__3" class="slide">
+              <img src="https://nynm-quidax-strapi.s3.amazonaws.com/Fregz_Webcard_1e249678fd.jpeg" height="200px" style="border-radius: 10px"/>
+              <a class="slide__prev" href="#slides__3" title="Prev"></a>
+              <a class="slide__next" href="#slides__4" title="Next"></a>
+            </div>
+            <div id="slides__4" class="slide">
+              <img src="https://nynm-quidax-strapi.s3.amazonaws.com/Don_Jazzy_Web_Card_699154ef98.jpeg" height="200px" style="border-radius: 10px"/>
+              <a class="slide__prev" href="#slides__4" title="Prev"></a>
+              <a class="slide__next" href="#slides__5" title="Prev"></a>
+            </div>
+            <div id="slides__5" class="slide">
+                <img src="https://nynm-quidax-strapi.s3.amazonaws.com/MI_Webcard_d613e1a49e.jpeg" height="200px" style="border-radius: 10px"/>
+                <a class="slide__prev" href="#slides__5" title="Next"></a>
+                <a class="slide__next" href="#slides__6" title="Next"></a>
+              </div>
+              <div id="slides__6" class="slide">
+                <img src="https://nynm-quidax-strapi.s3.amazonaws.com/Diane_Web_Card_6ce3046fc1.jpeg" height="200px" style="border-radius: 10px"/>
+                <a class="slide__prev" href="#slides__6" title="Prev"></a>
+                <a class="slide__next" href="#slides__7" title="Next"></a>
+              </div>
+              <div id="slides__7" class="slide">
+                <img src="https://nynm-quidax-strapi.s3.amazonaws.com/Timini_Webcard_62498cd8ee.jpeg" height="200px" style="border-radius: 10px" />
+                <a class="slide__prev" href="#slides__7" title="Next"></a>
+                <a class="slide__next" href="#slides__8" title="Next"></a>
+              </div>
+            <div id="slides__8" class="slide">
+               <img src="https://nynm-quidax-strapi.s3.amazonaws.com/WEBCARD_1_f281a5da7e.jpg" height="200px" style="border-radius: 10px"/>
+               <a class="slide__prev" href="#slides__8" title="Prev"></a>
+               <a class="slide__next" href="#slides__9" title="Next"></a> 
+            </div>   
+               <div id="slides__9" class="slide">
+                <div id="slides__8" class="slide">
+                    <img src="https://nynm-quidax-strapi.s3.amazonaws.com/Buy_and_Sell_With_USDT_db7f1d7089.jpeg" height="200px" style="border-radius: 10px" />
+                    <a class="slide__prev" href="#slides__9" title="Prev"></a>
+                    <a class="slide__next" href="#slides__10" title="Next"></a>
+                  </div>
+                <div id="slides__10" class="slide">
+                   <img src="https://nynm-quidax-strapi.s3.amazonaws.com/Bisola_Web_Cards_2_448b8caa98.jpg" height="200px" style="border-radius: 10px"/>
+                   <a class="slide__prev" href="#slides__10" title="Prev"></a>
+                   <a class="slide__next" href="#slides__11" title="Next"></a>    
+                   <div id="slides__8" class="slide">
+                   </div>
+                <div id="slides__11" class="slide"></div>
+                <img src="https://nynm-quidax-strapi.s3.amazonaws.com/New_Mobile_App_b205e30f17.jpeg" height="200px" style="border-radius: 10px" />
+                <a class="slide__prev" href="#slides__11" title="Prev"></a>
+                <a class="slide__next" href="#slides__12" title="Next"></a>
+             </div> -->
 
-  
+
+    </body>
+</html>
