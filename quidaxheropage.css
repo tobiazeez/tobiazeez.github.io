@@ -352,3 +352,56 @@ Variables
       display: block;
     }
   }
+ 
+
+  @media only screen and (max-width: 1020px) {
+    html{
+        font-size: 14px;
+    }
+    .logo{
+        max-width: 6.80rem;
+        min-height: 2.75rem;
+        z-index: ;
+    }
+    nav{
+        display: none;
+    }
+    .button{
+        padding: 0rem 2.7rem;
+        min-height: 3.5rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+    
+    main .button{
+        padding: 0.45rem 4.5rem;
+        font-size: 1.15rem;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        
+    .crypto {
+          font-size: 3.8rem;
+          display: flex;
+          max-width:760.41px;
+          width: 100%;
+          justify-content: center;
+      }
+
+      h6 {
+        font-size: 1.0rem;
+        display: flex;
+        justify-content: center;
+    }
+    .stores a{
+        font-size: 0.95rem;
+        display: flex;
+        justify-content: center;
+    }
+
+  
