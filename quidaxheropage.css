@@ -1,407 +1,178 @@
-/* Google fonts cdn link */
 @import url(//db.onlinewebfonts.com/c/9b06ae83a4412168ed194a8ed31218c2?family=Mabry+Pro+Medium);
 @font-face {font-family: "Mabry Pro Medium"; src: url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.eot"); src: url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9b06ae83a4412168ed194a8ed31218c2.svg#Mabry Pro Medium") format("svg"); }
+:root {
+    --primary: rgb(56, 35, 131);
+    --secondary: rgb(236, 93, 160);
+    --text: rgb(76, 74, 85);
+    --tertiary: rgb(99, 216, 147);
+    --heading: rgb(32, 23, 73);
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mabry Pro Medium', sans-serif;
-    text-decoration: none;
 }
 
-html{
-  font-size: 16px;
+html {
+    font-size: 16px;
+    font-family: 'MabryPro', sans-serif;
 }
+
+.header-wrapper {
+    background: white;
+}
+
+.content-wrapper {
+    padding: 0 1.4rem;
+    max-width: 1296px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+body {
+    color: var(--text);
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+    
+
 
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 1280px;
-    height: 103px;
-    z-index: 1000;
-    background: rgb(255, 255, 255);
-}
-
-nav .navbar {
-    height: 102px;
-    max-width: 1296px;
-    margin: auto;
     display: flex;
-    align-items: center;
-    align-content: center;
     justify-content: space-between;
-    padding: 24px 24px 24px 24px;
+    padding: 1.4rem 0;
+    align-items: center;
 }
 
-nav .navbar .logo a {
-    height: 32px;
-    width: 109px;
-}
-
-nav .navbar .nav-links { 
-    background: white;
-    height: 102%;
-    line-height: 51px;
-
-}
-
-nav .navbar .nav-links .links {
-    display: flex;
-}
-
-nav .navbar .nav-links .links li {
+.navlinks {
+    display: flex; 
     list-style: none;
-    position: relative;
     align-items: center;
-    display: flex;
-    padding: 0 14px;
 }
 
-nav .navbar .nav-links .links li a {
-    color:  rgb(76,74,85);
-    text-decoration: none;
-    white-space: nowrap;
-    height: 100%;
-}
-
-nav .navbar .nav-links .links li a:hover {
-    color: rgb(236, 93, 160); 
-}
-
-nav .navbar .nav-links .links li .arrow {
-  
-    height: 100%;
-    width: 22px;
-    line-height: 51px;
-    text-align: center;
-    color: rgb(76,74,85);
-    transition: all 0.3s ease;
-}
+.navlinks.login li:nth-child(2) {
+    margin: 0;
+    margin-left: 1.3rem;
+    display: block;
+  }
 
 
-nav .navbar .nav-links .links li:hover .htmlcss-arrow {
-    transform: rotate(-180deg);
-    color: rgb(236, 93, 160);
-}
-
-.sign {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-}
-
-.signinlink {
-    font-size: 1rem;
-    line-height: 1rem;
-    height: 16px;
-    margin-right: 40px;
-    font-weight: 700;
-    color: #382383;
-    text-decoration: solid;
-}
-
-.button {
-    background-color: #382383;
+.navlinks.login .signup:hover {
     color: white;
-    border: 10px;
-    padding: 15px 45px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 16px;
-    height: 54px;
-    width: 183.2px;
-    line-height: 24px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-main .button {
-  width: 200px
-}
-
-.button:hover {
-    background-color: rgb(99,216,147);
-}
-
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    margin-left: 20px;
-    margin: 70px 30px;
-    margin-top: 75px;
-    height: 521px;
 }
 
 
-
-.crypto {
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 10px;
-    font-family: inherit;
-
+.navlinks li {
+    display: none;
 }
 
-h1{
-    font-size: 64px;
-    font-family: MabryPro sans-serif;
-    color: rgb(32, 23, 73);
-    font-weight: 800;
-    display: block;
-    height: 152px;
-    line-height: 76.8px;
-    margin-bottom: 24px;
-    margin-block-end: 24px;
-    width: 560px;
-    max-width: 560px;
-    word-wrap: break-word;
-}
 
-p {
-    display: block;
-    color: rgb(76, 74, 85);
-    font-size: 15px;
-    font-weight: 450;
-    height: 50px;
-    line-height: 25.6px;
-    margin-bottom: 48px;
-    max-width: 400px;
-    width: 400px;
-}
-
-h6 {
-    display: block;
-    color: rgb(76, 74, 85);
-    font-size: 13.760000228881836px;
-    height: 21px;
-    letter-spacing: 1.7200000286102295px;
-    line-height: 20.639999389648438px;
-    margin-block-end: 16px;
-    margin-bottom: 16px;
-    text-align: left;
-    text-transform: uppercase;
-    width: 560px;
-    font-weight: 500;
-    padding-top: 48px;
-}
-
-.stores a {
-    color: rgb(236, 93, 160);
-    cursor: pointer;
-    display: inline-flex;
+a {
+    text-decoration: none;
+    color: var(--text);
     font-weight: bold;
-    height: 19px;
-    line-height: 19.200000762939453px;
-    text-align: left;
-    width: 95.15625px;
-    font-size: 16px;
-    padding-top: 24px;
 }
 
-.image {
-  max-width: 542px;
-  height: 521px;
-  justify-content: center;
-  width: 542px;
-Variables
-
-}
-
- /* .slider-container {
-    background-color: white;
-   width:100%;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-  }
-  
-  .slider {
-    width: 100%;
-    max-width: 1600px;
-    height: 200px;
-    margin: 10px;
-   border-image: space;
-    border-radius: 20px;
-    overflow:hidden;
-    position: relative;
+.signup {
+    background: var(--primary);
+    color: white;
+    padding: 0.75rem 1.75rem;
     border-radius: 10px;
-    padding-bottom: 300px;
-    margin-bottom: 60px ;
+}
+
+.signup:hover {
+    background-color: var(--tertiary);
+}
+
+.navlinks li.hamburger {
+    display: block;
+    margin-left: 1.3rem;
   }
-  .slides.img{
-      padding-bottom: 50px;
-  }
-  .slides {
-    display: flex;
-    overflow-x: scroll;
-    position: relative;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    border-radius: 20px;
     
-  }
-  
-  .slide:nth-of-type(even) {
-    background-color: white;
-  }
-  
-  .slide {
+
+.navlinks li.hamburger button {
+    border: none;
+    background: transparent;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    width: 100%;
-    height: 200px;
-    scroll-snap-align: center;
-    margin-right: 0px;
-    box-sizing: border-box;
-    background: white;
-    transform-origin: center center;
-    transform: scale(1);
-    overflow: hidden;
+    justify-content: center;
+  }
+
+.navlinks li.hamburger svg {
+    color: var(--primary);
+    font-size: 24px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .navlinks li {
+        margin: 1rem 1.3rem;
+        display: block;
+    } 
+    .navlinks li a {
+        display: flex;
+        align-items: center;
+    }
+    .navlinks li a:hover {
+        color: var(--secondary);
+        }
+    .signin {
+        color: var(--primary);
+    }
+    .navlinks.login .signin:hover {
+        color: var(--primary); 
+    }
+    .dropdownicon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem; 
+    }
     
-  }
-  
-  .slide__text {
-    font-size: 40px;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
-  
-  .slide a {
-    background: none;
-   
-    position: absolute;
-    top: 48%;
-    width: 35px;
-    height: 35px;
-    border: solid black;
-    border-width: 0 4px 4px 0;
-    padding: 3px;
-    box-sizing: border-box;
-  }
-  
-  a.slide__prev,
-  .slider::before {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    left: 5%;
-  }
-  
-  a.slide__next,
-  .slider::after {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    right: 5%;
-  }
-  
-  .slider::before,
-  .slider::after,
-  .slide__prev,
-  .slide__next {
-    position: absolute;
-    top: 48%;
-    width: 35px;
-    height: 35px;
-   
-    border-width: 0 4px 4px 0;
-    padding: 3px;
-    box-sizing: border-box;
-  }
-  
-  .slider::before,
-  .slider::after {
-    content: "";
-    z-index: 1;
-    background: none;
-    pointer-events: none;
-  }
-  
-  .slider__nav {
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    width: 200px;
-    margin-left: -100px;
-    text-align: center;
-    height: ;
-  }
-  
-  .slider__navlink {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: black;
-    margin: 0 10px 0 10px;
-  } */
-
-
-  
-
-  @media (min-width: 64rem)  { 
-    .sign .signinlink {
-      display: block;
+    .dropdownicon svg {
+        transition: transform 0.3s ease-in-out 0s;
+        transform: rotate(0deg);
+        transform-origin: center center;
     }
-  }
- 
-
-  @media only screen and (max-width: 1020px) {
-    html{
-        font-size: 14px;
+    
+    .navlinks li a:hover .dropdownicon svg {
+        transform: rotate(-180deg);
     }
-    .logo{
-        max-width: 6.80rem;
-        min-height: 2.75rem;
-        z-index: ;
+    .signup {
+        background: var(--primary);
+        color: white;
+        padding: 0.9rem 2.8rem;
+        border-radius: 10px;
     }
-    nav{
+    .signup:hover {
+        background-color: var(--tertiary);
+    }
+    .navlinks li.hamburger {
         display: none;
     }
-    .button{
-        padding: 0rem 2.7rem;
-        min-height: 3.5rem;
-        height: 100%;
-        font-size: 1rem;
+    .body-wrapper {
+        padding-top: 5rem;
     }
-    
-    main .button{
-        padding: 0.45rem 4.5rem;
-        font-size: 1.15rem;
+    .container {
+        padding: 0 1.4rem;
     }
-
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        
-    .crypto {
-          font-size: 3.8rem;
-          display: flex;
-          max-width:760.41px;
-          width: 100%;
-          justify-content: center;
-      }
-
-      h6 {
-        font-size: 1.0rem;
-        display: flex;
-        justify-content: center;
+    h1 {
+        color: var(--primary);
+        max-width: 560px;
+        width: 560px;
+       font-size: 4rem;
+       font-weight: 700;
+       line-height: 1.2;
+       margin-bottom: 1.5rem;
+       margin-block-end: 1.5rem;
+        ;
     }
-    .stores a{
-        font-size: 0.95rem;
-        display: flex;
-        justify-content: center;
+    p {
+        color: var(--heading);
+        max-width: 400px;
+        margin-bottom: 3rem;
+        margin-block-end: 3rem;
     }
-
-  
+} 
